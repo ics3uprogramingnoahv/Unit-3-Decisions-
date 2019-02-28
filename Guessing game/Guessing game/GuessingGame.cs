@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Guessing_game
 {
-    static class Program
+    static class GuessingGame
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,7 +16,7 @@ namespace Guessing_game
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GuessingGameForm());
+            Application.Run(new frmGuessingGame());
         }
     }
 }
