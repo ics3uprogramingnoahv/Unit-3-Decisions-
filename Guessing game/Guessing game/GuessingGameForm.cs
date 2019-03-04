@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Media;
 namespace Guessing_game
 {
     public partial class frmGuessingGame : Form
@@ -30,13 +30,16 @@ namespace Guessing_game
             if (guess == NUMBER)
             {
                 picRightWrong.Image = Properties.Resources.checkmark;
-
+                SoundPlayer splayer2 = new SoundPlayer(@"earrape.wav");
+                splayer2.Play();
             }
 
 
             else
             {
                 picRightWrong.Image = Properties.Resources.red_x;
+                SoundPlayer splayer = new SoundPlayer(@"earrape.wav");
+                splayer.Play();
             }
                 
             
