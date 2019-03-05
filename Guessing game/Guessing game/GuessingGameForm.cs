@@ -30,7 +30,7 @@ namespace Guessing_game
             if (guess == NUMBER)
             {
                 picRightWrong.Image = Properties.Resources.checkmark;
-                SoundPlayer splayer2 = new SoundPlayer(@"earrape.wav");
+                SoundPlayer splayer2 = new SoundPlayer(@"bell.wav");
                 splayer2.Play();
             }
 
