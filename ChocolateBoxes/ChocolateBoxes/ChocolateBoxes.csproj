@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{063CFE38-0CDB-4F6C-9C59-D5A9D772F157}</ProjectGuid>
+    <ProjectGuid>{AE5B821C-0212-4FC1-BE0B-17FD61FF97DA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>RockPaperScisorsNoahV</RootNamespace>
-    <AssemblyName>RockPaperScisorsNoahV</AssemblyName>
+    <RootNamespace>ChocolateBoxes</RootNamespace>
+    <AssemblyName>ChocolateBoxes</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,14 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RockPaperScissorsForm.cs">
+    <Compile Include="ChocolateBoxesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RockPaperScissorsForm.Designer.cs">
-      <DependentUpon>RockPaperScissorsForm.cs</DependentUpon>
+    <Compile Include="ChocolateBoxesForm.Designer.cs">
+      <DependentUpon>ChocolateBoxesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="RockPaperScissors.cs" />
+    <Compile Include="ChocolateBoxes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChocolateBoxesForm.resx">
+      <DependentUpon>ChocolateBoxesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,9 +65,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RockPaperScissorsForm.resx">
-      <DependentUpon>RockPaperScissorsForm.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
