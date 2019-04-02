@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Created by: Noah Voroney
+ * Created on: tue apr 2 2019
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #27 - Control Objects
+ * This program changes the colur of the objects when interacted with
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,11 +36,6 @@ namespace ForEachControlNoahV
                     aControlObject.BackColor = Color.Purple;
                 }
             }
-
-
-
-
-
 
         }
 
