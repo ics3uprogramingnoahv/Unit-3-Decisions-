@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Created by:Noah
+ * Created on: Feb. 7, 2019
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #16 guess numbers
+ * This program displays a x or check mark depending on if you guess the number right
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

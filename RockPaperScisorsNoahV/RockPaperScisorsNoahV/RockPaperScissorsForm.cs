@@ -62,7 +62,7 @@ namespace RockPaperScisorsNoahV
             // set the radio button to for the computer's choice
             if (computerChoice == ROCK)
             {
-              else if{ playerChoice == ROCK
+               if{ playerChoice == ROCK
 
                 }
 
