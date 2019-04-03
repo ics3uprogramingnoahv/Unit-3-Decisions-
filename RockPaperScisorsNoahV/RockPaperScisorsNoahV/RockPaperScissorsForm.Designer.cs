@@ -150,6 +150,7 @@
             this.lblWinner.Size = new System.Drawing.Size(127, 13);
             this.lblWinner.TabIndex = 3;
             this.lblWinner.Text = "winer winer chicken diner";
+            this.lblWinner.Click += new System.EventHandler(this.lblWinner_Click);
             // 
             // frmRockpaperScissors
             // 

@@ -33,55 +33,113 @@ namespace RockPaperScisorsNoahV
             const int SCISSORS = 3;
 
             // get ther users selection, if there is no selection set it to 0
-            if (radRockHuman.Checked == true) 
+            if (radRockHuman.Checked == true)
             {
 
                 playerChoice = ROCK;
             }
 
-             else if (radPaperHuman.Checked == true) 
+            else if (radPaperHuman.Checked == true)
             {
 
                 playerChoice = PAPER;
             }
 
-           else  if (radScissorsHuman.Checked == true) 
+            else if (radScissorsHuman.Checked == true)
             {
 
                 playerChoice = SCISSORS;
             }
             else
-           {
+            {
 
                 playerChoice = 0;
 
             }
             // randomly generate a number between 1 and 3, representing Rock, Paper or Scisssors
             computerChoice = randomNumberGenerator.Next(MIN_VALUE, MAX_VALUE + 1);
+            if (computerChoice == 1)
+            {
 
+                playerChoice = ROCK;
+            }
+
+            else if (computerChoice == 2)
+            {
+
+                playerChoice = PAPER;
+            }
+
+            else if (computerChoice == 3)
+            {
+
+                playerChoice = SCISSORS;
+            }
+            else
+            {
+
+                playerChoice = 0;
+
+            }
             // set the radio button to for the computer's choice
             if (computerChoice == ROCK)
             {
-               if{ playerChoice == ROCK
+                if (playerChoice == ROCK)
+                {
+                    lblWinner.Text = "Tie";
+                }
+                else if (playerChoice == PAPER)
+                {
+                    lblWinner.Text = "you win";
+                }
+                else  if(playerChoice == SCISSORS)
+                {
+                    lblWinner.Text = "You lost";
+                }
+            }
 
+            else if(computerChoice == PAPER)
+            {
+                if (playerChoice == ROCK)
+                {
+                    lblWinner.Text = "you lose";
+                }
+                if (playerChoice == PAPER)
+                {
+                    lblWinner.Text = "Tie";
+                }
+                if (playerChoice == SCISSORS)
+                {
+                    lblWinner.Text = "You lose";
+                }
+            }
+            else if(computerChoice == SCISSORS)
+            {
+                 if (playerChoice == ROCK)
+                {
+                      lblWinner.Text = "you win";
+                }
+                else if (playerChoice == PAPER)
+                {
+                    lblWinner.Text = "you lose";
+                }
+                else if (playerChoice == SCISSORS)
+                {
+                    lblWinner.Text = "Tie";
                 }
 
-                else if{ }
-
-                else { }
-
-
-
-
-
-
-
             }
+        }
 
         private void frmRockpaperScissors_Load(object sender, EventArgs e)
         {
             ComputerInput = randomNumberGenerator.Next(MIN_VALUE, MAX_VALUE + 1);
             lblWinner.Hide();
+        }
+
+        private void lblWinner_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
