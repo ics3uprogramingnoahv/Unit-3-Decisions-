@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerfectSquaresNoahV", "PerfectSquaresNoahV\PerfectSquaresNoahV.csproj", "{C47D2DAF-6D03-4A99-8E2C-F6ABA3DB6CEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C47D2DAF-6D03-4A99-8E2C-F6ABA3DB6CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C47D2DAF-6D03-4A99-8E2C-F6ABA3DB6CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C47D2DAF-6D03-4A99-8E2C-F6ABA3DB6CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C47D2DAF-6D03-4A99-8E2C-F6ABA3DB6CEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58D39902-0828-4AF7-ADE6-4CBE84F985FE}
+	EndGlobalSection
+EndGlobal
